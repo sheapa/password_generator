@@ -17,7 +17,7 @@
 
   <body>
       <!--Bootstrap Container will hold everything.-->
-    <div class="container-fluid">
+    <div class="container">
         <!--Jumbotron holds title & instructions.-->
         <div class="jumbotron">
             <div class="container">
@@ -25,6 +25,27 @@
                 <h2>Set your parameters below, then click "Generate". </h2>
             </div>
         </div>
+        <div>
+            <h3>Criteria</h3>
+        </div> 
+        <form>
+            <label><b>Password length (8-128 characters)</b></label>
+            <input type="number" name="message" id="CharInput" min="8" max="128" required>
+            </br>
+            <label><b>Include special characters? (@#$%)</b></label>
+            <input type="checkbox" name="sym" id="symInput" required>
+            </br>
+            <label><b>Include numbers? (0-9)</b></label>
+            <input type="checkbox" name="num" id="numInput" required>
+            </br>
+            <label><b>Include lowercase letters? (a-z)</b></label>
+            <input type="checkbox" name="low" id="lowInput" required>
+            </br>
+            <label><b>Include uppercase letters? (A-Z)</b></label>
+            <input type="checkbox" name="up" id="upInput" required>
+        </form>
+        
+       
     </div>
    
 
